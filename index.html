@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Login-page 1.0.0</title>
+  <meta name="description" content="Login form replication from dribbble">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/application.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <div class="form-options">
+      <nav class="menu menu--alonso">
+					<ul class="menu__list">
+						<li class="menu__item menu__item--current" onclick="addClassOnClick(this,'login-form')"><a href="#" class="menu__link">Login</a></li>
+						<li class="menu__item" onclick="addClassOnClick(this,'signup-form')"><a href="#" class="menu__link" >Sign up</a></li>
+						<li class="menu__line"></li>
+					</ul>
+			</nav>
+      <div class="form-wrapper">
+        <div class="form form--login active" id="login-form">
+          <div class="wrapper">
+            <div class="form__field">
+              <label class="form__field--label">E-mail</label>
+              <input type='text' class="form__field--input">
+            </div>
+            <div class="form__field">
+              <label class="form__field--label">Password</label>
+              <input type='text' class="form__field--input">
+            </div>
+            <div class="form__field">
+              <button class="form-button">Login</button>
+            </div>
+        </div>
+        </div>
+        <div class="form form--signup" id="signup-form">
+          <div class="wrapper">
+            <div class="form__field">
+              <label class="form__field--label">E-mail</label>
+              <input type='text' class="form__field--input">
+            </div>
+            <div class="form__field">
+              <label class="form__field--label">Password</label>
+              <input type='text' class="form__field--input">
+            </div>
+            <div class="form__field">
+              <label class="form__field--label">Confirm Password</label>
+              <input type='text' class="form__field--input">
+            </div>
+            <div class="form__field">
+              <button class="form-button signup">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+function addClassOnClick(elem,formId) {
+    console.log(formId);
+    document.getElementById('signup-form').classList.remove('active');
+    document.getElementById('login-form').classList.remove('active');
+    document.getElementById(formId).classList.add('active');
+    // get all 'li' elements
+    var li = document.getElementsByTagName('li');
+    // loop through all 'li' elements
+    for (i = 0; i < li.length; i++) {
+        // Remove the class 'active' if it exists
+        li[i].classList.remove('menu__item--current')
+    }
+    // add 'active' classs to the element that was clicked
+    elem.classList.add('menu__item--current');
+}
+</script>
+</html>
