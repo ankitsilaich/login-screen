@@ -1,3 +1,3 @@
 # Login Animation
 
-![alt tag](https://dribbble.com/shots/2287561-Login-Sign-Up-Interface)
+![alt tag](https://d13yacurqjgara.cloudfront.net/users/729829/screenshots/2287561/forms.gif)
