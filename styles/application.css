@@ -112,20 +112,6 @@ body {
 	transform: translate3d(100%, 0, 0);
 }
 
-.menu--alonso .menu__item:nth-child(3).menu__item--current ~ .menu__line {
-	-webkit-transform: translate3d(200%, 0, 0);
-	transform: translate3d(200%, 0, 0);
-}
-
-.menu--alonso .menu__item:nth-child(4).menu__item--current ~ .menu__line {
-	-webkit-transform: translate3d(300%, 0, 0);
-	transform: translate3d(300%, 0, 0);
-}
-
-.menu--alonso .menu__item:nth-child(5).menu__item--current ~ .menu__line {
-	-webkit-transform: translate3d(400%, 0, 0);
-	transform: translate3d(400%, 0, 0);
-}
 
 @media screen and (max-width:55em) {
 	.menu--alonso .menu__line {
@@ -142,20 +128,6 @@ body {
 		transform: translate3d(0, 3em, 0);
 	}
 
-	.menu--alonso .menu__item:nth-child(3).menu__item--current ~ .menu__line {
-		-webkit-transform: translate3d(0, 6em, 0);
-		transform: translate3d(0, 6em, 0);
-	}
-
-	.menu--alonso .menu__item:nth-child(4).menu__item--current ~ .menu__line {
-		-webkit-transform: translate3d(0, 9em, 0);
-		transform: translate3d(0, 9em, 0);
-	}
-
-	.menu--alonso .menu__item:nth-child(5).menu__item--current ~ .menu__line {
-		-webkit-transform: translate3d(0, 12em, 0);
-		transform: translate3d(0, 12em, 0);
-	}
 }
 
 .form-wrapper {
@@ -236,7 +208,6 @@ body {
   top: 0px;
   background: #c9dfec;
   -webkit-animation: close-login 0.3s  both ease-out;
-
 }
 
 .form.active .wrapper {
@@ -244,7 +215,7 @@ body {
 }
 .wrapper {
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 @-webkit-keyframes open-signup {
